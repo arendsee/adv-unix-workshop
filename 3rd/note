@@ -1,0 +1,27 @@
+Part Three - awk
+================
+
+The blast.tab file contains the following columns
+
+ 1.  qgi      - query identifier
+ 2.  sgi      - subject identifier
+ 3.  evalue   - similar to p-value
+ 4.  bitscore - hit score
+ 5.  sstart   - start of subject alignment
+ 6.  send     - end of subject alignment
+ 7.  qstart   - start of query alignment
+ 8.  qend     - end of query alignment
+ 9.  gaps     - number of gaps in alignment
+ 10. length   - alignment length
+
+
+
+ 1. Print the rows where
+    a) evalue < 1e-6
+    b) evalue < 1e-6 AND (length - gaps) / qlen > 0.5
+
+
+ 2. For each query/subject pair, print the best match (the one with the lowest evalue)
+
+
+
