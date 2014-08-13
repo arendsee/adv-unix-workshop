@@ -2,6 +2,7 @@ Part Two - sed
 ==============
 
 
+Maybe try a few easy examples ...
 
 # Genbank sequences
 
@@ -16,11 +17,12 @@ Part Two - sed
 
 
 
- 3. Delete all lines between REFERENCE and FEATURES, but keep the FEATURES line.
+ 3. *** Delete all lines between REFERENCE and FEATURES, but keep the FEATURES
+    line.
 
 
 
-# Fasta sequences
+# Fasta sequences - a little redundant, maybe just keep one or two?
 
  4. Extract the gi numbers from all the headers in the seqs folder to a new file
     named gi-lists.txt
@@ -33,29 +35,29 @@ Part Two - sed
 
 
 
- 6. List all the species represented, write this to species.txt file.
+ 6. List all unique the species represented, write this to species.txt file.
 
 
 
 # Domains file
 
- 7. Extract all the unique ref ids in *.domains.tblout.txt that have the word Photosystem in them.
+ 7. Extract all the unique gi in *.domains.tblout.txt that have the word Photosystem in them.
 
 
 
- 8. Which files in the seq folder (the putative parasitic plants), do not have any of these genes?
+ 8. Which files in the 2nd_seq folder (the putative parasitic plants), do not
+    have any of these genes?
 
     Hint: grep with -f option along with command substitution
 
 
 
  9. Print the first header (the first line) in each file.
-
-    Hint: try using head with -q option
-
+    If you want you can clean up the output with grep
 
 
-# Pepstat
+
+# Pepstat - output of EMBOSS pepstats tool
 
  10. Retrieve the full pepstat record for XP_762687
 

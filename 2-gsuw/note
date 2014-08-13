@@ -4,11 +4,11 @@ Part One - describing thousands of files
 For each question, record your answer (the command) in a file
 
 
- 1. Unzip the data file (called orgranell-genomes.zip). Explore the folder.
+ 1. Unzip the data file (called organelle-genomes.zip). Explore the folder.
 
 
 
- 2. Find the files that are NOT genome files (do not have a .fasta extension).
+ 2. Find the files that are NOT genome files (do not have a .faa extension).
 
     Hint: try piping output of ls into grep
 
@@ -25,7 +25,9 @@ For each question, record your answer (the command) in a file
     |animal mitochondria |                     |
     --------------------------------------------
 
-    Hint: Remember to read the README in the mitochondria folder.
+    Hint: 1) You need to find a way to distinguish between plant, fungi and
+             animal from the filenames.
+          2) Remember to read the README in the mitochondria folder.
 
 
 
@@ -39,7 +41,7 @@ For each question, record your answer (the command) in a file
 
 
  6.
-    a) Figure out how many proteins are in each genome.
+    a) Figure out how many proteins are in each mitochondrial genome.
 
        Hint 1: for each protein, there is one header, which begins with '>'.
        Hint 2: can be done with just grep
@@ -54,6 +56,28 @@ For each question, record your answer (the command) in a file
 
     c) Count the number of genomes with each number of proteins 
 
+$ <a combintation of grep, sort and uniq, with fancy options>
+      4 1
+      3 2
+      2 3
+      4 4
+      1 5
+      1 6
+      2 7
+      1 8
+      1 9
+      4 10
+      9 11
+    197 12
+   3638 13
+     84 14
+     16 15
+      1 16
+      1 17
+      6 18
+      1 20
+      1 21
+Where the first column is number of genomes and second is number of proteins.
 
 
  7. In an act of drunken negligence, you duplicated one of the entries in one
@@ -61,7 +85,8 @@ For each question, record your answer (the command) in a file
 
 
 
- 8. Get a random sample of 20 plant chloroplast genome files.
+ 8. (If on Mac, use R) get a random sample of 20 plant chloroplast genome
+    files.
 
 
 

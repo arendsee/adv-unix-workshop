@@ -1,0 +1,28 @@
+Directory Contents
+.
+├── 1st
+│   └── note
+├── 2nd
+│   ├── note
+│   └── sedscr
+├── 3rd
+│   └── note
+├── 4th
+│   ├── example-scripts
+│   │   ├── box-mueller.sh
+│   │   ├── io-tests.sh
+│   │   └── lesser.sh
+│   ├── note
+│   └── tiny-fastq-sample.fq
+├── cheat_sheet.md
+├── data.tar
+├── notes-from-review
+├── README
+└── slides
+    ├── Intro.pdf
+    ├── Part1.pdf
+    ├── Part2.pdf
+    ├── Part3.pdf
+    └── Part4.pdf
+
+
