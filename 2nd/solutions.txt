@@ -1,0 +1,100 @@
+Part One - describing thousands of files
+========================================
+
+ For each question, record your answer (the command) in a file
+
+
+ 1. Explore the organelle folder.
+
+
+
+ 2. Find the files that are NOT genome files (do not have a .faa extension).
+
+    ls * | grep -v '.faa$'
+
+
+ 3. Count the number of genome files (with .faa extensions) of each type.
+    Remember to cat the READMEs that you find. They tell you the naming
+    conventions.
+
+    ------------------------------------------
+    |type                | number of genomes |
+    |--------------------|-------------------|
+    |chloroplast         |  504              |   
+    |plant mitochondria  |   93              |    
+    |fungi mitochondria  |  164              |
+    |animal mitochondria | 3977              |
+    ------------------------------------------
+
+    # in chloroplast directory
+    ls *faa | wc -l
+
+    # in mitochondria directory
+    ls *.fungi.faa | wc -l
+    ls *.plant.faa | wc -l
+    ls ??_*.faa | wc -l
+
+    Note: NC_*.faa misses one file
+
+
+
+
+ 4. Move all the plant mitochondria to a plant-mitochondria folder and the
+    fungi to a fungi-mitochondria folder.
+
+    # in organelle-genomes directory
+    mkdir {fungal,plant}-mitochondria
+    mv mitochondria/*.fungi.faa fungal-mitochondria
+    mv mitochondria/*.plant.faa plant-mitochondria
+    mv mitochondria animal-mitochondria
+
+
+ 5.
+    a) Count the entries each mitochondrial genome file.
+
+        grep -c '>' *faa
+
+
+    b) Sort output by number of entries
+
+       grep -c '>' *.faa | sort -t ':' -nk 2
+
+
+    c) Which animal has the largest mitochondria? Plant? Fungi? 
+
+       grep -c '>' *.faa | sort -t ':' -nk 2 | tail -1
+
+       # Or 
+       for d in animal fungal plant; do
+           grep -c '>' ${d}-mitochondria/*.faa |
+               sort -t ':' -nk 2 | tail -1
+       done
+        
+    
+ 
+    d) Count the number of genomes with each number of proteins 
+
+
+    grep -ch '>' *.faa | sort -n | uniq -c
+
+ 6. In an act of drunken negligence, you duplicated one of the entries in one
+    of the chloroplast genomes (you can't remember which). Find it.
+
+    grep '>' *.faa | sort | uniq -d
+
+
+
+ 7. Fasta headers (the lines starting with '>') contain descriptions of the
+    proteins. Find the chloroplast genomes that do not contain the word
+    'photosystem'. These may be from parasitic plants which are incapable of
+    photosynthesis.
+
+    grep -iL 'photosystem' *.faa
+
+
+ 8. How many proteins are in each of the genomes from #9?
+ 
+    grep -c '>' $(grep -iL 'photosystem' *.faa)
+
+
+

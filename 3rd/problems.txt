@@ -1,0 +1,55 @@
+Part Two - sed
+==============
+
+
+# Genbank sequences - 3rd/data/genbank-flastfile.gb
+
+ 1. The genbank-flastfile.gb file consists of about 3000 protein records.  Look
+    over this file to get a feel for the data structure.
+
+   * How do records begin?
+   * What separates one record from the next?
+   * What sort of data is preset?
+
+
+
+ 2. Replace author Morden,C.W with Batman 
+
+
+
+ 3. a) Use sed to print all the ORGANISM lines
+
+
+
+    b) delete the 'ORGANISM' string to get a list of species
+
+
+
+    c) pipe this through uniq to get a list of possible parasitic plants
+
+
+ 4. a) Use sed to print all SOURCE lines (but not DBSOURCE)
+
+
+
+    b) pipe this through uniq (and don't get distracted by the biology)
+
+
+ 
+ 5. Extract the full record for XP_762687
+
+
+
+# Fasta sequences - a little redundant, maybe just keep one or two?
+
+ 6. Extract the gi numbers from all the headers in the seqs folder to a new file
+    named gi-lists.txt
+
+
+
+ 7. Make a two column, tab delimited file containing gi and ref ids (from the
+    '>gi|11466974|ref|NP_054374.1|' part of each header). Write this to
+    'gi-ref-map.tsv' (tsv means tab-separated-values file).
+
+
+
