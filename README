@@ -1,22 +1,32 @@
-Directory Contents
+Advanced UNIX Workshop
+======================
+
+## Part One
+
+ 1. Open the file prep-data.sh, follow the comments within
+
+## Part Two
+
+ Answer the questions within the note.txt file
+
+
+##Directory Contents
 .
-├── 1st
-│   └── note
-├── 2nd
-│   ├── note
+├── 1-bash
+│   └── example-scripts
+│       ├── box-mueller.sh
+│       ├── io-tests.sh
+│       └── lesser.sh
+├── 2-gsuw
+│   └── note.txt
+├── 3-sed
+│   ├── note.txt
 │   └── sedscr
-├── 3rd
-│   └── note
-├── 4th
-│   ├── example-scripts
-│   │   ├── box-mueller.sh
-│   │   ├── io-tests.sh
-│   │   └── lesser.sh
-│   ├── note
+├── 4-awk
+│   ├── note.txt
 │   └── tiny-fastq-sample.fq
-├── cheat_sheet.md
-├── data.tar
-├── notes-from-review
+├── data-prep.sh
+├── data.tar.gz
 ├── README
 └── slides
     ├── Intro.pdf
@@ -25,4 +35,4 @@ Directory Contents
     ├── Part3.pdf
     └── Part4.pdf
 
-
+6 directories, 16 files

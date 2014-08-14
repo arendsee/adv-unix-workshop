@@ -1,0 +1,69 @@
+Part Two - sed
+==============
+
+
+Maybe try a few easy examples ...
+
+# Genbank sequences
+
+ 1. The genbank-flastfile.gb file consists of about 3000 protein records.  Look
+    over this file to get a feel for the data structure.
+
+   * How do records begin?
+   * What separates one record from the next?
+   * What sort of data is preset?
+
+ 2. Extract the full record for XP_762687.
+
+
+
+ 3. *** Delete all lines between REFERENCE and FEATURES, but keep the FEATURES
+    line.
+
+
+
+# Fasta sequences - a little redundant, maybe just keep one or two?
+
+ 4. Extract the gi numbers from all the headers in the seqs folder to a new file
+    named gi-lists.txt
+
+
+
+ 5. Make a two column, tab delimited file containing gi and ref ids (from the
+    '>gi|11466974|ref|NP_054374.1|' part of each header). Write this to
+    'gi-ref-map.tsv' (tsv means tab-separated-values file).
+
+
+
+ 6. List all unique the species represented, write this to species.txt file.
+
+
+
+# Domains file
+
+ 7. Extract all the unique gi in *.domains.tblout.txt that have the word Photosystem in them.
+
+
+
+ 8. Which files in the 2nd_seq folder (the putative parasitic plants), do not
+    have any of these genes?
+
+    Hint: grep with -f option along with command substitution
+
+
+
+ 9. Print the first header (the first line) in each file.
+    If you want you can clean up the output with grep
+
+
+
+# Pepstat - output of EMBOSS pepstats tool
+
+ 10. Retrieve the full pepstat record for XP_762687
+
+
+
+ 11. Print the isoelectric point for this record (using sed)
+
+
+
