@@ -1,22 +1,22 @@
 Advanced UNIX Workshop
 ======================
 
+File directory
 .
-├── 1-bash
-│   └── example-scripts
-│       ├── box-mueller.sh
-│       ├── io-tests.sh
-│       └── lesser.sh
-├── 2-gsuw
-│   └── note.txt
-├── 3-sed
-│   ├── note.txt
-│   └── sedscr
-├── 4-awk
-│   ├── note.txt
-│   └── tiny-fastq-sample.fq
-├── data-prep.sh
-├── data.tar.gz
+├── 1st
+│   ├── io-tests.sh
+│   └── lesser.sh
+├── 2nd
+│   ├── a.fa
+│   ├── b.fa
+│   ├── c.fa
+│   └── unsorted.tab
+├── 3rd
+│   ├── m.tab
+│   └── s.fa
+├── 4th
+│   ├── a.tab
+│   └── box-mueller.sh
 ├── README
 └── slides
     ├── Intro.pdf
