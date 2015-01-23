@@ -1,0 +1,26 @@
+Alice (never Absent) id=92650 friends=1 Present
+Bob id=a2eae friends=1 absent
+Carl id=7f847 friends=3 Absent
+Dennis id=93e8d friends=24 absent
+Ender id=093e9 friends=0 Present
+Francis* id=a4793 friends=2 Absent
+Gargantua id=275a9 friends=0 Absent
+Harold id=7a22d friends=34 Present
+Indra* id=d3496 friends=68 absent
+John Smith id=0f36f friends=54 Present
+Klebsiella* id=bb281 friends=0 Absent
+Lilith id=65420 friends=0 Absent
+Mark id=001f1 friends=4 Absent
+Noah id=b4945 friends=8 Present
+Octavius id=28b12 friends=8 Absent
+Pantagruel (never Present) id=d797f friends=0 Absent
+Quixote id=8653e friends=679 Absent
+Rumplestiltskin* id=c0fe8 friends=1 Absent
+Severus* id=bbf48 friends=2 present
+Tom id=57a67 friends=89 Absent
+Umbridge id=d37a0 friends=113 present
+Valentine id=7a0c7 friends=3 Present
+Wolfgang* id=58aff friends=98 present
+Xavier id=90e57 friends=3 Absent
+Yellor id=476a9 friends=455 Absent
+Zeek id=5bd4a friends=6 Absent

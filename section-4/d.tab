@@ -1,0 +1,27 @@
+# diamonds dataset borrowed from Hadley Wickham's ggplot2 package
+# carat  cut        color  clarity  depth  table  price  x      y      z
+  0.7    Fair       G      VS1      56.2   65     2384   5.93   5.88   3.32
+  1.01   Good       F      SI2      58.3   60     4011   6.64   6.66   3.88
+  1.69   Good       G      VS1      58.1   58     17338  7.8    7.84   4.54
+  0.3    Good       G      VVS2     63.8   56     878    4.29   4.27   2.73
+  0.71   Good       I      SI1      59.9   65     2165   5.71   5.74   3.43
+  1.21   Good       I      VS2      64.1   61     5028   6.7    6.66   4.28
+  0.69   Ideal      G      SI1      62.4   56     2297   5.66   5.69   3.55
+  0.5    Ideal      G      VVS2     62     56     1935   5.13   5.09   3.17
+  0.7    Ideal      H      SI1      62.2   55     2294   5.67   5.71   3.54
+  2.1    Ideal      H      SI1      62.9   57     18648  8.19   8.12   5.13
+  0.8    Ideal      I      IF       62.4   58     3357   5.9    5.96   3.7
+  0.55   Ideal      I      VVS1     62.7   57     1593   5.17   5.23   3.26
+  1.05   Ideal      I      VVS2     61.8   53     5932   6.56   6.57   4.06
+  1.04   Ideal      J      SI1      61.1   57     3931   6.57   6.52   4
+  0.7    Premium    D      SI2      62.1   60     2299   5.71   5.73   3.55
+  1.03   Premium    D      SI2      62.3   58     3675   6.5    6.4    4.03
+  0.33   Premium    G      VS2      59.3   61     743    4.51   4.49   2.67
+  0.32   Premium    G      VS2      61.9   58     720    4.43   4.36   2.72
+  2.31   Premium    I      SI2      62.9   58     17218  8.43   8.34   5.27
+  1.31   Premium    I      VS2      61.9   59     6323   7.02   6.98   4.33
+  0.71   Very_Good  D      SI1      63.3   59     2525   5.55   5.66   3.55
+  0.31   Very_Good  D      SI1      63.4   58     732    4.35   4.32   2.75
+  0.91   Very_Good  E      VS2      61.1   58     5145   6.2    6.28   3.81
+  1.01   Very_Good  F      SI1      62.1   57     4969   6.41   6.48   4
+  1.51   Very_Good  I      VS2      63.1   56     8223   7.26   7.32   4.6
