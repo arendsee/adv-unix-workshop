@@ -25,6 +25,10 @@ echo | awk -v n=$1 -v s=$RANDOM$RANDOM '
     }
 
     END {
+        if(n == 1){
+            rnorm(pi)
+            print a
+        }
         for (i=1; i <= n/2; i++){
             rnorm(pi)
             print a "\n" b
