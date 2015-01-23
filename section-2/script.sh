@@ -30,15 +30,15 @@ echo -e "\t<Scenes>"
 
 #-----------------------------------------------------------------------------
 # Exercise 2.2
-# 1) Count the number of words that begin with 'un', sort by frequency. The
+# 1) Count the number of words that end with 'ly', sort by frequency. The
 #    top 3 lines should be:
-#      11 uncle
-#      7  understand
-#      4  unto
+#      6 only
+#      7 fly
+#      4 truly
 # 2) Count words that are used only once
 #-----------------------------------------------------------------------------
 
-echo "'un' words:"
-echo -e "\t<'un' word counts>"
+echo "'ly' words:"
+echo -e "\t<'*ly' word counts>"
 
 echo "Number of words used only once: <number>"
