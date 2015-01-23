@@ -7,10 +7,16 @@
 # Each transform uses two uniform random variables and outputs two normal
 # random variables
 
+if [[ $1 == '' ]]; then
+    n=1
+else
+    n=$1
+fi
+
 # Two variables are passed to AWK 
 #    n - the number of random normal variables to output
 #    s - the initial random seed, see note below
-echo | awk -v n=$1 -v s=$RANDOM$RANDOM '
+echo | awk -v n=$n -v s=$RANDOM$RANDOM '
     BEGIN {
         pi = 4 * atan2(1,1)
         srand(s)
