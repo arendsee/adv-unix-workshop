@@ -20,11 +20,11 @@ echo 'Parsing Hamlet'
 
 echo "Word counts:"
 # Replace the line below with a command that writes word counts for each file
-echo -e "\t<word count per file>"
+wc -w h*
 
-echo "Scenes:"
+echo "Scene"
 # Use grep to list the scenes in all five h*.txt files with one command
-echo -e "\t<Scenes>"
+grep 'Scene' h*.txt
 
 
 

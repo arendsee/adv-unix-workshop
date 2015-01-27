@@ -18,6 +18,11 @@ echo 'Hello World!'
 #    "Jess, Jack and Jenn say hi!"
 #-----------------------------------------------------------------------------
 
+a='jess'
+b='jack'
+c='jenn'
+echo "$a, $b, $c"
+
 
 
 #-----------------------------------------------------------------------------
@@ -30,9 +35,6 @@ echo 'Hello World!'
 #    Use command substitution to print the sentence:
 #    "I am <username> and today is <date>"
 #    Replacing <username> and <date> with output of `whoami` and `date`
-# 3) Assign 4.5 and 2.1 to the variables x and y. Then use arithmetic
-#    substitution to print the sentence:
-#    "x + y = 6.6"
 #-----------------------------------------------------------------------------
 
 
@@ -44,7 +46,7 @@ echo 'Hello World!'
 # 3) What happens when you feed it a non-numeric argument?
 #-----------------------------------------------------------------------------
 
-
+echo "$0 $1 $2"
 
 #-----------------------------------------------------------------------------
 # Exercise 1.4 - for-loops
